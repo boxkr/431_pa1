@@ -15,6 +15,18 @@ end
 
 def max_2_sum(arr)
   # YOUR CODE HERE
+  #should return the sum of its two largest elements in arr.
+  #sort and pick last
+  if arr.length == 0
+    0
+  elsif arr.length == 1
+    arr[0]
+  else
+    sorted = arr.sort.reverse
+    #puts sorted
+    res = sorted[0] + sorted[1]
+    res
+  end
 end
 
 def sum_to_n?(arr, number)
