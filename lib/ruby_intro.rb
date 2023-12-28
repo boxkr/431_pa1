@@ -4,7 +4,13 @@
 
 def sum(arr)
   # YOUR CODE HERE
-  0
+
+  #trying to do the block indent 
+  res = 0
+  arr.each do |num|
+    res+=num
+  end
+  res
 end
 
 def max_2_sum(arr)
