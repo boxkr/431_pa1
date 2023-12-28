@@ -31,6 +31,18 @@ end
 
 def sum_to_n?(arr, number)
   # YOUR CODE HERE
+  #literally twosum lol
+
+  arr.each do |num|
+    arr.each do |num2|
+      puts "#{num} #{num2} #{number}"
+      if (num + num2) == number
+        puts "fire"
+        true
+      end
+    end
+  end
+  false
 end
 
 # Part 2
