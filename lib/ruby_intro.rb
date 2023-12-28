@@ -32,12 +32,26 @@ end
 def sum_to_n?(arr, number)
   # YOUR CODE HERE
   #literally twosum lol
+
+
+  #res = false
+  #arr.each do |num|
+  #  arr.each do |num2|
+  #    if (num + num2) == number && num != num2
+  #      res = true
+  #    end
+  #  end
+  #end
+  #res
+
+
+  #another way to do it using rubys for loop syntax. very python-like
   res = false
-  arr.each do |num|
-    arr.each do |num2|
-      puts "#{num} #{num2} #{number}"
-      if (num + num2) == number && num != num2
-        puts "fire"
+  for num in arr
+
+    for num2 in arr
+
+      if num + num2 == number && num != num2
         res = true
       end
     end
