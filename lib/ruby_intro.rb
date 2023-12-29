@@ -147,4 +147,8 @@ class BookInStock
     @price = price
   end
 
+  def price_as_string
+    res = "$#{(format("%.2f",@price))}"
+  end
+
 end
