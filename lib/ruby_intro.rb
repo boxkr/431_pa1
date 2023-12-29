@@ -87,6 +87,29 @@ end
 
 def binary_multiple_of_4?(string)
   # YOUR CODE HERE
+  #going to convert then check, not good with bit operations https://docs.ruby-lang.org/en/3.2/Kernel.html#method-i-Integer
+  #validate
+  flag = false
+  for letter in string.split("")
+    if (letter != "0") && (letter != "1")
+      res = false
+      flag = true
+    end
+  end
+
+  #emtty
+  if string == ""
+    flag = true
+  end
+
+  #go
+  res = false
+  if flag == false
+    if Integer(string,2) % 4 == 0 
+      res = true
+    end
+  end
+res
 end
 
 # Part 3
