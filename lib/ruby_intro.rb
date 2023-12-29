@@ -70,6 +70,19 @@ end
 
 def starts_with_consonant?(string)
   # YOUR CODE HERE
+  all_letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVXYZ"
+  res = true
+  if string == ""
+    res = false
+  end
+  if string != "" && !all_letters.include?(string[0]) 
+    res = false
+  end
+  consonants = "AEIOUaeiou".split("")
+  if consonants.include?(string[0])
+    res = false
+  end
+  res
 end
 
 def binary_multiple_of_4?(string)
